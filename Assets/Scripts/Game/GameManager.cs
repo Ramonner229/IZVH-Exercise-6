@@ -169,7 +169,8 @@ public class GameManager : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #elif UNITY_WEBPLAYER || UNITY_WEBGL
-        Application.OpenURL("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); 
+        //Application.OpenURL("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        Application.OpenURL(Application.absoluteURL);
 #else //!UNITY_WEBPLAYER
         Application.Quit();
 #endif
